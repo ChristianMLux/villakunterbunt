@@ -3,8 +3,10 @@
     <header class="main-header">
       <p class="sub-heading">Kinderladen <br />Tübingen</p>
       <h1>
-        <e class="green">Vil</e><e class="red">la</e> <e class="blue">Kunter</e
-        ><e class="yellow">bunt</e>
+        Villa<e class="blue">K</e><e class="yellow">u</e><e class="green">n</e
+        ><e class="purple">t</e><e class="red">e</e><e class="orange">r</e
+        ><e class="yellow">b</e><e class="red">u</e><e class="blue">n</e
+        ><e class="purple">t</e>
       </h1>
     </header>
   </div>
@@ -45,5 +47,11 @@ h1 {
 }
 .red {
   color: var(--red);
+}
+.purple {
+  color: var(--purple);
+}
+.orange {
+  color: var(--orange);
 }
 </style>
