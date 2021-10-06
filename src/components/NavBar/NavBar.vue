@@ -1,37 +1,37 @@
 <template>
   <nav class="navbar">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item item-1">
         <router-link :to="homeRoute" class="nav-link">
           <component :is="routeIconHome" size="large"></component>
           <span class="link-text">Pädagogische Grundsätze</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item item-2">
         <router-link :to="profileRoute" class="nav-link">
           <component :is="routeIconProfile"></component>
           <span class="link-text">Praktische Umsetzung</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item item-3">
         <router-link :to="cvRoute" class="nav-link">
           <component :is="routeIconCV"></component>
           <span class="link-text">Team</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item item-4">
         <router-link :to="storyRoute" class="nav-link">
           <component :is="routeIconStory"></component>
           <span class="link-text">Geschichte</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item item-5">
         <router-link :to="contactRoute" class="nav-link">
           <component :is="routeIconContact"></component>
           <span class="link-text">Anmeldung</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item item-6">
         <router-link :to="contactRoute" class="nav-link">
           <component :is="routeIconContact"></component>
           <span class="link-text">Anfahrt</span>
@@ -143,8 +143,26 @@ export default {
 }
 .nav-link:hover,
 .nav-link:active {
-  background: var(--green);
+  _background: var(--green);
   color: var(--dark);
+}
+.item-1:hover {
+  background: var(--green);
+}
+.item-2:hover {
+  background: var(--yellow);
+}
+.item-3:hover {
+  background: var(--blue);
+}
+.item-4:hover {
+  background: var(--red);
+}
+.item-5:hover {
+  background: var(--purple);
+}
+.item-6:hover {
+  background: var(--orange);
 }
 
 .gitHub:hover,
