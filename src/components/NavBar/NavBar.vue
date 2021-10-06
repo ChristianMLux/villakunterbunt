@@ -37,9 +37,9 @@
           <span class="link-text">Anfahrt</span>
         </router-link>
       </li>
-      <li class="nav-item">
-        <label>Name<input id="name" /></label>
-        <label name="password">Passwort<input id="pwd" /></label>
+      <li class="nav-item login">
+        <label><input id="name" placeholder="Name eingeben" /></label>
+        <label name="password"><input id="pwd" placeholder="Passwort" /></label>
         <button id="login">Login</button>
       </li>
     </ul>
@@ -84,6 +84,17 @@ export default {
     justify-content: baseline;
     align-items: baseline;
   }
+  .login {
+    display: flex;
+    flex-flow: column;
+    button {
+      margin: 0.5rem;
+    }
+    input {
+      margin: 0.5rem;
+      width: 89%;
+    }
+  }
 }
 .navbar-nav {
   list-style: none;
@@ -98,6 +109,10 @@ export default {
   margin-top: auto;
   text-align: left;
   padding: 0.5rem;
+  margin-left: 0.25rem;
+}
+.login {
+  display: none;
 }
 
 .nav-item {
@@ -172,6 +187,17 @@ a {
     display: block;
     justify-content: baseline;
     align-items: baseline;
+  }
+  .login {
+    display: flex;
+    flex-flow: column;
+    button {
+      margin: 0.5rem;
+    }
+    input {
+      margin: 0.5rem;
+      width: 89%;
+    }
   }
 }
 </style>
