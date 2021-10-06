@@ -38,16 +38,9 @@
         </router-link>
       </li>
       <li class="nav-item">
-        <router-link :to="contactRoute" class="nav-link">
-          <component :is="routeIconContact"></component>
-          <span class="link-text">Kontakt & Impressum</span>
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link :to="contactRoute" class="nav-link">
-          <component :is="routeIconContact"></component>
-          <span class="link-text">Datenschutz</span>
-        </router-link>
+        <label>Name<input id="name" /></label>
+        <label name="password">Passwort<input id="pwd" /></label>
+        <button id="login">Login</button>
       </li>
     </ul>
   </nav>
@@ -102,7 +95,9 @@ export default {
   height: 100%;
 }
 .nav-item:last-child {
-  _margin-top: auto;
+  margin-top: auto;
+  text-align: left;
+  padding: 0.5rem;
 }
 
 .nav-item {
