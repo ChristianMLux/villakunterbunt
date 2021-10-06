@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  background: #f1f1f3;
   margin-top: 2rem;
   padding: 2rem;
   padding-top: 0;

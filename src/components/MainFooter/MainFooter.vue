@@ -8,6 +8,12 @@
       <a href="http://www.dachverband-tuebingen.de/.">Dachverband Tübingen</a>
       <p class="copyright">&copy; 2021 - Villa Kunterbunt Tübingen</p>
     </div>
+    <div class="footer footer-right">
+      <p class="copyright">&copy; 2021 - Villa Kunterbunt Tübingen</p>
+      <router-link to="/contact">Kontakt</router-link>
+      <router-link to="/contact">Impressum</router-link>
+      <router-link to="/contact">Datenschutz</router-link>
+    </div>
   </footer>
 </template>
 
@@ -19,8 +25,9 @@ export default {
 
 <style lang="scss" scoped>
 .main-footer {
+  display: flex;
   margin-top: auto;
-  box-shadow: var(--green) 0px 1px 3px, var(--green) 0px 1px 2px;
+  border-top: 1px dotted var(--green);
   margin-top: 2rem;
 }
 .main-footer > div {
@@ -29,6 +36,18 @@ export default {
   flex-flow: column;
 }
 .footer-center {
-  max-width: 80vw;
+  max-width: 40vw;
+}
+.footer-right {
+  text-align: right;
+  a {
+    padding: 0.25rem;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+.copyright {
+  margin: 1rem 0 0.5rem 0;
 }
 </style>
