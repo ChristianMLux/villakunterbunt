@@ -4,36 +4,36 @@
       <li class="nav-item item-1">
         <router-link :to="homeRoute" class="nav-link">
           <component :is="routeIconHome" size="large"></component>
-          <span class="link-text">Pädagogische Grundsätze</span>
+          <span class="link-text">Startseite</span>
         </router-link>
       </li>
       <li class="nav-item item-2">
-        <router-link :to="profileRoute" class="nav-link">
-          <component :is="routeIconProfile"></component>
-          <span class="link-text">Praktische Umsetzung</span>
+        <router-link :to="pedagogicalPriciplesRoute" class="nav-link">
+          <span class="link-text">Pädagogische Grundsätze</span>
         </router-link>
       </li>
       <li class="nav-item item-3">
-        <router-link :to="cvRoute" class="nav-link">
-          <component :is="routeIconCV"></component>
-          <span class="link-text">Team</span>
+        <router-link :to="practicalImplementationRoute" class="nav-link">
+          <span class="link-text">Praktische Umsetzung</span>
         </router-link>
       </li>
       <li class="nav-item item-4">
-        <router-link :to="storyRoute" class="nav-link">
-          <component :is="routeIconStory"></component>
-          <span class="link-text">Geschichte</span>
+        <router-link :to="teamRoute" class="nav-link">
+          <span class="link-text">Team</span>
         </router-link>
       </li>
       <li class="nav-item item-5">
-        <router-link :to="contactRoute" class="nav-link">
-          <component :is="routeIconContact"></component>
-          <span class="link-text">Anmeldung</span>
+        <router-link :to="historyRoute" class="nav-link">
+          <span class="link-text">Geschichte</span>
         </router-link>
       </li>
       <li class="nav-item item-6">
-        <router-link :to="contactRoute" class="nav-link">
-          <component :is="routeIconContact"></component>
+        <router-link :to="signUpRoute" class="nav-link">
+          <span class="link-text">Anmeldung</span>
+        </router-link>
+      </li>
+      <li class="nav-item item-7">
+        <router-link :to="directionsRoute" class="nav-link">
           <span class="link-text">Anfahrt</span>
         </router-link>
       </li>
@@ -53,14 +53,12 @@ export default {
     return {
       routeIconHome: "md-home-icon",
       homeRoute: "/",
-      routeIconProfile: "md-person-icon",
-      profileRoute: "/profile",
-      routeIconStory: "md-book-icon",
-      storyRoute: "/story",
-      cvRoute: "/cv",
-      routeIconCV: "md-document-icon",
-      routeIconContact: "md-mail-icon",
-      contactRoute: "/contact",
+      pedagogicalPriciplesRoute: "/pedagogicalPrinciples",
+      practicalImplementationRoute: "/practicalImplementation",
+      teamRoute: "/team",
+      historyRoute: "/history",
+      signUpRoute: "/signUp",
+      directionsRoute: "/directions",
     };
   },
 };
@@ -163,6 +161,9 @@ export default {
 }
 .item-6:hover {
   background: var(--orange);
+}
+.item-7:hover {
+  background: var(--green);
 }
 
 .gitHub:hover,

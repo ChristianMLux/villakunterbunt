@@ -18,22 +18,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header-wrappwer {
-  z-index: 1;
-  width: 100%;
-  margin: 0 auto;
-}
-
 h1 {
   margin: 0;
   font-size: 3rem;
 }
 .main-header {
   padding: 1rem;
+  margin-left: 13.75rem;
   display: flex;
   flex-flow: row;
   align-items: flex-start;
-  justify-content: center;
+  border-bottom: 1px dotted var(--yellow);
 }
 
 .blue {

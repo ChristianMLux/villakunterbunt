@@ -29,6 +29,7 @@ export default {
   --dark: #2c3e50;
   --orange: #ef7b45;
   --purple: #be81da;
+  font-size: 18px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
